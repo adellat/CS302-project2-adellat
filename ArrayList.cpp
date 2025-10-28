@@ -40,7 +40,7 @@ bool ArrayList<T>::remove(int position){
 }
 
 template <typename T>
-T ArrayList<T>::get(int) const{
+T ArrayList<T>::get(int position) const{
     if(position >= 0 && position < itemCounter){
         return items[position];
     }
