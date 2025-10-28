@@ -9,14 +9,14 @@ template <typename T>
 LinkedStack<T>::~LinkedStack() {
     while (top != nullptr) {
         Node<T>* temp = top;
-        top = top->next;
+        top = top->getNext();
         delete temp;
     }
 }
 template <typename T>
 bool LinkedStack<T>::push(const T& value) {
     Node<T>* newNode = new Node<T>(value);
-    newNode->next = top;
+    newNode->getNext() = top;
     top = newNode;
     return true;
 }
@@ -27,8 +27,8 @@ T LinkedStack<T>::pop() {
     }
 
     Node<T>* tempPTR = top;
-    T value = top->data;
-    top = top->next;
+    T value = top->getItem();
+    top = top->getNext();
     delete tempPTR;
     return value;
 }
@@ -37,7 +37,7 @@ T LinkedStack<T>::peek() const {
     if (isEmpty()) {
         return T();
     }
-    return top->data;
+    return top->getItem();
 }
 template <typename T>
 bool LinkedStack<T>::isEmpty() const {
@@ -47,8 +47,8 @@ template <typename T>
 void LinkedStack<T>::print() const {
     Node<T>* current = top;
     while (current != nullptr) {
-        cout << current->data << " ";
-        current = current->next;
+        cout << current->getItem() << " ";
+        current = current->getNext();
     }
     cout << endl;
 }

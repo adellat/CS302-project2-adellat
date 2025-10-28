@@ -10,7 +10,7 @@ LinkedList<T>::~LinkedList(){
     Node<T>* current = headPTR;
     while(current != nullptr){
         Node<T>* tempPTR = current;
-        current = current->next;
+        current = current->getNext();
         delete tempPTR;
     }
 }
@@ -21,15 +21,15 @@ bool LinkedList<T>::insert(int position,const T& item){
     }
     Node<T>* newNode = new Node<T>(item);
     if(position == 0){
-        newNode->next = headPTR;
+        newNode->getNext() = headPTR;
         headPTR = newNode;
     }else{
         Node<T>* prevPTR = headPTR;
         for(int i = 0; i < position; i++){
-            prevPTR = prevPTR->next;
+            prevPTR = prevPTR->getNext();
         }
-        newNode->next = prevPTR->next;
-        prevPTR->next = newNode;
+        newNode->getNext() = prevPTR->next;
+        prevPTR->getNext() = newNode;
     }
     counter++;
     return true;
@@ -42,14 +42,14 @@ bool LinkedList<T>::remove(int position){
     Node<T>* tempPTR;
     if (position == 0) {
         tempPTR = headPTR;
-        headPTR = headPTR->next;
+        headPTR = headPTR->getNext();
     } else {
         Node<T>* prevPTR = headPTR;
         for (int i = 0; i < position - 1; i++) {
-            prevPTR = prevPTR->next;
+            prevPTR = prevPTR->getNext();
         }
-        tempPTR = prevPTR->next;
-        prevPTR->next = tempPTR->next;
+        tempPTR = prevPTR->getNext();
+        prevPTR->getNext() = tempPTR->getNext();
     }
     delete tempPTR;
     counter--;
@@ -63,9 +63,9 @@ T LinkedList<T>::get(int position) const{
     }
     Node<T>* current = headPTR;
     for (int i = 0; i < position; i++) {
-        current = current->next;
+        current = current->getNext();
     }
-    return current->data;
+    return current->getItem();
 }
 template<typename T>
 int LinkedList<T>::size() const{
@@ -79,8 +79,8 @@ template<typename T>
 void LinkedList<T>::print() const{
     Node<T>* current = headPTR;
     while(current != nullptr){
-        cout << current->data << " ";
-        current = current->next;
+        cout << current->getItem() << " ";
+        current = current->getNext();
     }
     cout << endl;
 }
