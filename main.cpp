@@ -109,6 +109,6 @@ int main(){
     //         return 0;
     //     default:
             cout << "invalid option, please enter a different option" << endl;
-    }
+    //}
     return 0;
 }
