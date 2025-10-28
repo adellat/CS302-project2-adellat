@@ -52,3 +52,13 @@ void LinkedStack<T>::print() const {
     }
     cout << endl;
 }
+template <typename T>
+void LinkedStack<T>::testLinkedStack(){
+    cout << "Linked Stack" << endl;
+    LinkedStack<int> stack;
+    stack.push(100);
+    stack.push(150);
+    cout << "Pop: " << stack.pop() << endl;   
+    cout << "Peek: " << stack.peek() << endl; 
+    stack.print();                            
+}

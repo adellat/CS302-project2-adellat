@@ -11,6 +11,6 @@ class ArrayQueue{
         T peek() const;
         bool isEmpty() const;
         void print() const;
-
+        void testArrayQueue();
 };
 #endif

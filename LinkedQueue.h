@@ -2,5 +2,5 @@
 #define LINKEDQUEUE_H
 #include "Node.h"
 
-
+    
 #endif

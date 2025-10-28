@@ -15,5 +15,6 @@ class ArrayStack{
         T peek() const;
         bool isEmpty() const;
         void print() const;
+        void testArrayStack();
 };
 #endif 

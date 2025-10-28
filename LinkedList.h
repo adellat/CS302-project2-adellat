@@ -15,5 +15,6 @@ class LinkedList{
         int size() const;
         bool isEmpty() const;
         void print() const;
+        void testLinkedList();
 };
 #endif

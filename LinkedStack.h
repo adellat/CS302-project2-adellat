@@ -9,11 +9,11 @@ class LinkedStack {
 public:
     LinkedStack();
     ~LinkedStack();
-
     bool push(const T& value);
     T pop();
     T peek() const;
     bool isEmpty() const;
     void print() const;
+    void testLinkedStack();
 };
 #endif 

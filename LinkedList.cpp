@@ -85,3 +85,14 @@ void LinkedList<T>::print() const{
     }
     cout << endl;
 }
+template<typename T>
+void LinkedList<T>::testLinkedList(){
+    cout << "Linked List" << endl;
+    LinkedList<int> list;
+    list.insert(0, 15);
+    list.insert(1, 5);
+    list.insert(1, 10);  
+    list.remove(2);     
+    list.print();       
+    cout << "Index 0: " << list.get(0) << endl;
+}

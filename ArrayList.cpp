@@ -64,3 +64,14 @@ void ArrayList<T>::print() const{
     }
     cout << endl;
 }
+template <typename T>
+void ArrayList<T>::testArrayList(){
+    cout << endl << "Array List" << endl;
+    ArrayList<int> list;
+    list.insert(0, 15);
+    list.insert(1, 5);
+    list.insert(1, 10);
+    list.remove(0);
+    list.print();
+    cout << "Index 1: " << list.get(1) << endl;
+}
