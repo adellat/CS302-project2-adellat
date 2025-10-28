@@ -31,3 +31,4 @@ template <typename T>
 void Node<T>::setNext(Node<T>* nextNode){
     next = nextNode;
 }
+template class Node<int>;
