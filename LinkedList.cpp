@@ -95,4 +95,4 @@ void LinkedList<T>::testLinkedList(){
     list.print();       
     cout << "Index 0: " << list.get(0) << endl;
 }
-//template class LinkedList<int>;
+template class LinkedList<int>;
