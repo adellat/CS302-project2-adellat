@@ -78,9 +78,11 @@ int main(){
             cin >> implementation;
             switch(implementation){
                 case 1:
+                    ArrayList<int> list;
                     testArrayList();
                     break;
                 case 2:
+                    LinkedList<int> list;
                     testLinkedList();
                     break;
             }
@@ -90,9 +92,11 @@ int main(){
             cin >> implementation;
             switch(implementation){
                 case 1:
+                    ArrayStack<int> stack;
                     testArrayStack();
                     break;
                 case 2:
+                    LinkedStack<int> stack;
                     testLinkedStack();
                     break;
             }
