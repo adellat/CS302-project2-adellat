@@ -76,7 +76,7 @@ int main(){
         case 1:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
-            if(implementation = 1){
+            if(implementation == 1){
                 ArrayList<int> arrayList;
                 arrayList.testArrayList();
             }else{
@@ -87,7 +87,7 @@ int main(){
         case 2:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
-            if(implementation = 1){
+            if(implementation == 1){
                 ArrayStack<int> arrayStack;
                 arrayStack.testArrayStack();
             }else{
