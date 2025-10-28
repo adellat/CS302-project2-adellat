@@ -17,7 +17,7 @@ Node<T>::Node(const T& value, Node<T>* nextNode){
 }
 template <typename T>
 T Node<T>::getItem() const{
-    return item;
+    return data;
 }
 template <typename T>
 void Node<T>::setItem(const T& value){

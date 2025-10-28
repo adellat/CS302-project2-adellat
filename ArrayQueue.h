@@ -2,8 +2,8 @@
 #define ArrayQueue_H
 #include <iostream>
 using namespace std;
-
-class ArrayQueue(){
+template<typename T>
+class ArrayQueue{
     
     public:
         bool enqueue();

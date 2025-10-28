@@ -8,7 +8,7 @@ class ArrayList{
     int itemCounter;
     int max;
     static const int DEFAULT_MAX = 100;
-    T items[MAX + 1];
+    T items[DEFAULT_MAX + 1];
     public:
         ArrayList();
         ArrayList(const ArrayList<T>& arrayList);

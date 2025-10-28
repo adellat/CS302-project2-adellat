@@ -48,7 +48,7 @@ void testLinkedStack(){
 }
 void testArrayQueue(){
     cout << "Array Queue" << endl;
-    ArrayQueue<int> queue;
+    ArrayQueue<int> arrayQueue;
     queue.insert(1);
     queue.insert(2);
     queue.insert(3);
