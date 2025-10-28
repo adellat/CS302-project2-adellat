@@ -15,6 +15,6 @@ class LinkedStack {
         T peek() const;
         bool isEmpty() const;
         void print() const;
-        
+        void testLinkedStack(); 
 };
 #endif 
