@@ -20,5 +20,6 @@ class ArrayList{
         bool isEmpty() const;
         void print() const;
         ~ArrayList() {}
+        void testArrayList();
 };
 #endif
