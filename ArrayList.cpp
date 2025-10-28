@@ -2,7 +2,7 @@
 
 template <typename T>
 ArrayList<T>::ArrayList(){
-    itemCounet = 0;
+    itemCounter = 0;
     max = DEFAULT_MAX;
 }
 template <typename T>
