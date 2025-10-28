@@ -62,3 +62,4 @@ void LinkedStack<T>::testLinkedStack(){
     cout << "Peek: " << stack.peek() << endl; 
     stack.print();                            
 }
+template class LinkedStack<int>;

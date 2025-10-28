@@ -75,3 +75,4 @@ void ArrayList<T>::testArrayList(){
     list.print();
     cout << "Index 1: " << list.get(1) << endl;
 }
+template class ArrayList<int>;

@@ -41,7 +41,7 @@ void ArrayStack<T>::print() const{
     cout << endl;
 }
 template <typename T>
-void ArrayStack<T>::testArrayStack(){
+void testArrayStack(){
     cout << "Array Stack" << endl;
     ArrayStack<int> stack;
     stack.push(10);
@@ -50,3 +50,4 @@ void ArrayStack<T>::testArrayStack(){
     cout << "Peek: " << stack.peek() << endl; 
     stack.print(); 
 }
+template class ArrayStack<int>;
