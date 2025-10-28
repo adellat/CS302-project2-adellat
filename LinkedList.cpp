@@ -77,10 +77,10 @@ bool LinkedList<T>::isEmpty() const{
 }
 template<typename T>
 void LinkedList<T>::print() const{
-    Node<T>* current = head;
+    Node<T>* current = headPTR;
     while(current != nullptr){
         cout << current->data << " ";
-        currentPTR = current->next;
+        current = current->next;
     }
     cout << endl;
 }
