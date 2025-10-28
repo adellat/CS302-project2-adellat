@@ -7,10 +7,10 @@ LinkedList<T>::LinkedList(){
 }
 template<typename T>
 LinkedList<T>::~LinkedList(){
-    Node<T>* currentPTR = headPTR;
-    while(currentPTR != nullptr){
-        Node<T>* tempPTR = currentPTR;
-        currentPTR = currentPTR->nextPTR;
+    Node<T>* current = headPTR;
+    while(current != nullptr){
+        Node<T>* tempPTR = current;
+        current = current->next;
         delete tempPTR;
     }
 }
@@ -21,15 +21,15 @@ bool LinkedList<T>::insert(int position,const T& item){
     }
     Node<T>* newNode = new Node<T>(item);
     if(position == 0){
-        newNode->nextPTR = headPTR;
+        newNode->next = headPTR;
         headPTR = newNode;
     }else{
         Node<T>* prevPTR = headPTR;
         for(int i = 0; i < position; i++){
-            prevPTR = prevPTR->nextPTR;
+            prevPTR = prevPTR->next;
         }
-        newNode->nextPTR = prevPTR->nextPTR;
-        prevPTR->nextPTR = newNode;
+        newNode->next = prevPTR->next;
+        prevPTR->next = newNode;
     }
     counter++;
     return true;
@@ -42,31 +42,30 @@ bool LinkedList<T>::remove(int position){
     Node<T>* tempPTR;
     if (position == 0) {
         tempPTR = headPTR;
-        headPTR = headPTR->nextPTR;
+        headPTR = headPTR->next;
     } else {
         Node<T>* prevPTR = headPTR;
         for (int i = 0; i < position - 1; i++) {
-            prevPTR = prevPTR->nextPTR;
+            prevPTR = prevPTR->next;
         }
         tempPTR = prevPTR->nextPTR;
-        prevPTR->nextPTR = tempPTR->nextPTR;
+        prevPTR->next = tempPTR->next;
     }
     delete tempPTR;
     counter--;
     return true;
 }
 
-}
 template<typename T>
 T LinkedList<T>::get(int position) const{
     if (position < 0 || position >= counter) {
         return T();
     }
-    Node<T>* currentPTR = headPTR;
+    Node<T>* current = headPTR;
     for (int i = 0; i < position; i++) {
-        currentPTR = currentPTR->nextPTR;
+        current = current->next;
     }
-    return currentPTR->data;
+    return current->data;
 }
 template<typename T>
 int LinkedList<T>::size() const{
@@ -78,10 +77,10 @@ bool LinkedList<T>::isEmpty() const{
 }
 template<typename T>
 void LinkedList<T>::print() const{
-    Node<T>* currentPTR = headPTR;
-    while(currentPTR != nullptr){
-        cout << currentPTR->data << " ";
-        currentPTR = currentPTR->nextPTR;
+    Node<T>* current = head;
+    while(current != nullptr){
+        cout << current->data << " ";
+        currentPTR = current->next;
     }
     cout << endl;
 }
