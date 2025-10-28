@@ -16,5 +16,5 @@ class Node{
         Node<T>* getNext() const;
         void setNext(Node<T>* nextNode);
 };
-#include node.cpp
+#include "Node.cpp"
 #endif

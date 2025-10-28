@@ -4,7 +4,7 @@
 using namespace std;
 
 template <typename T>
-class ArrayList(){
+class ArrayList{
     int itemCounter;
     int max;
     static const int DEFAULT_MAX = 100;
