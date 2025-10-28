@@ -14,7 +14,7 @@ class ArrayList{
         ArrayList(const ArrayList<T>& arrayList);
         bool insert(int position,const T& newItem);
         bool remove(int position);
-        T get(int) const;
+        T get(int position) const;
         int getSize() const;
         bool isEmpty() const;
         void print() const;
