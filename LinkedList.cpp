@@ -16,7 +16,7 @@ LinkedList<T>::~LinkedList(){
 }
 template<typename T>
 bool LinkedList<T>::insert(int position,const T& item){
-    if(position < 0 || position > count){
+    if(position < 0 || position > counter){
         return false;
     }
     Node<T>* newNode = new Node<T>(item);
@@ -48,7 +48,7 @@ bool LinkedList<T>::remove(int position){
         for (int i = 0; i < position - 1; i++) {
             prevPTR = prevPTR->next;
         }
-        tempPTR = prevPTR->nextPTR;
+        tempPTR = prevPTR->next;
         prevPTR->next = tempPTR->next;
     }
     delete tempPTR;
@@ -95,4 +95,4 @@ void LinkedList<T>::testLinkedList(){
     list.print();       
     cout << "Index 0: " << list.get(0) << endl;
 }
-template class LinkedList<int>;
+//template class LinkedList<int>;
