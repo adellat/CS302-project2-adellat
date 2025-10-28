@@ -72,42 +72,42 @@ int main(){
     cout << "=========Data Structures Tester===========" << endl;
     cout << "1. Test List" << endl << "2. Test Stack" << endl << "3. Test Queue" << endl << "0. Exit" << endl;
     cin >> userInput;
-    switch(userInput){
-        case 1:
-            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
-            cin >> implementation;
-            if(implementation == 1){
-                ArrayList<int> list;
-                list.testArrayList();
-            }else{
-                LinkedList<int> list;
-                list.testLinkedList();
-            }
-            break;
-        case 2:
-            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
-            cin >> implementation;
-            if(implementation == 1){
-                ArrayStack<int> stack;
-                stack.testArrayStack();
-            }else{
-                LinkedStack<int> stack;
-                stack.testLinkedStack();
-            }
-            break;
-        case 3:
-            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
-            cin >> implementation;
-            // if(implementation = 1){
+    // switch(userInput){
+    //     case 1:
+    //         cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+    //         cin >> implementation;
+    //         if(implementation == 1){
+    //             ArrayList<int> list;
+    //             list.testArrayList();
+    //         }else{
+    //             LinkedList<int> list;
+    //             list.testLinkedList();
+    //         }
+    //         break;
+    //     case 2:
+    //         cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+    //         cin >> implementation;
+    //         if(implementation == 1){
+    //             ArrayStack<int> stack;
+    //             stack.testArrayStack();
+    //         }else{
+    //             LinkedStack<int> stack;
+    //             stack.testLinkedStack();
+    //         }
+    //         break;
+    //     case 3:
+    //         cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+    //         cin >> implementation;
+    //         // if(implementation = 1){
 
-            // }else{
+    //         // }else{
 
-            // }
-            break;
-        case 0:
-            cout << "Goodbye!" << endl;
-            return 0;
-        default:
+    //         // }
+    //         break;
+    //     case 0:
+    //         cout << "Goodbye!" << endl;
+    //         return 0;
+    //     default:
             cout << "invalid option, please enter a different option" << endl;
     }
     return 0;
