@@ -76,42 +76,33 @@ int main(){
         case 1:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
-            switch(implementation){
-                case 1:
-                    ArrayList<int> arrayList;
-                    arrayList.testArrayList();
-                    break;
-                case 2:
-                    LinkedList<int> linkedList;
-                    linkedList.testLinkedList();
-                    break;
+            if(implementation = 1){
+                ArrayList<int> arrayList;
+                arrayList.testArrayList();
+            }else{
+                LinkedList<int> linkedList;
+                linkedList.testLinkedList();
             }
             break;
         case 2:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
-            switch(implementation){
-                case 1:
-                    ArrayStack<int> arrayStack;
-                    arrayStack.testArrayStack();
-                    break;
-                case 2:
-                    LinkedStack<int> linkedStack;
-                    linkedStack.testLinkedStack();
-                    break;
+            if(implementation = 1){
+                ArrayStack<int> arrayStack;
+                arrayStack.testArrayStack();
+            }else{
+                LinkedStack<int> linkedStack;
+                linkedStack.testLinkedStack();
             }
             break;
         case 3:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
-            switch(implementation){
-                case 1:
-                    //
-                    break;
-                case 2:
-                    //
-                    break;
-            }
+            // if(implementation = 1){
+
+            // }else{
+
+            // }
             break;
         case 0:
             cout << "Goodbye!" << endl;
