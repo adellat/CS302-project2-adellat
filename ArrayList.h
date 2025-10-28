@@ -1,17 +1,23 @@
-#ifndef ArrayList_h
-#define ArrayList_h
+#ifndef ARRAYLIST_H
+#define ARRAYLIST_H
 #include <iostream>
 using namespace std;
 
+template <typename T>
 class ArrayList(){
-    
+    int itemCounter;
+    int max;
+    static const int DEFAULT_MAX = 100;
+    T items[MAX + 1];
     public:
-        bool insert(int,const T&);
-        bool remove(int);
+        ArrayList();
+        ArrayList(const ArrayList<T>& arrayList);
+        bool insert(int position,const T& newItem);
+        bool remove(int position);
         T get(int) const;
-        int size() const;
+        int getSize() const;
         bool isEmpty() const;
         void print() const;
-
+        ~ArrayList() {}
 };
 #endif

@@ -1,7 +1,119 @@
 //Author: Adella Todd
 //Program: CS 302 Project 2
-//Date: 10/23/25
+//Date: 10/27/25
+#include "ArrayList.h"
+#include "LinkedList.h"
+#include "ArrayStack.h"
+#include "LinkedStack.h"
+#include "ArrayQueue.h"
+#include "LinkedQueue.h"
+
+void testArrayList(){
+    cout << endl << "Array List" << endl;
+    ArrayList<int> list;
+    list.insert(0, 15);
+    list.insert(1, 5);
+    list.insert(1, 10);
+    list.remove(0);
+    list.print();
+    cout << "Index 1: " << list.get(1) << endl;
+}
+void testLinkedList(){
+    cout << "Linked List" << endl;
+    LinkedList<int> list;
+    list.insert(0, 15);
+    list.insert(1, 5);
+    list.insert(1, 10);  
+    list.remove(2);     
+    list.print();       
+    cout << "Index 0: " << list.get(0) << endl;
+}
+void testArrayStack(){
+    cout << "Array Stack" << endl;
+    ArrayStack<int> stack;
+    stack.push(10);
+    stack.push(15);
+    cout << "Pop: " << stack.pop() << endl;   
+    cout << "Peek: " << stack.peek() << endl; 
+    stack.print(); 
+}
+void testLinkedStack(){
+    cout << "Linked Stack" << endl;
+    LinkedStack<int> stack;
+    stack.push(100);
+    stack.push(150);
+    cout << "Pop: " << stack.pop() << endl;   
+    cout << "Peek: " << stack.peek() << endl; 
+    stack.print();                            
+}
+void testArrayQueue(){
+    cout << "Array Queue" << endl;
+    ArrayQueue<int> queue;
+    queue.insert(1);
+    queue.insert(2);
+    queue.insert(3);
+    queue.remove();                          
+    cout << "Peek: " << queue.peek() << endl; 
+    queue.print();  
+}
+void testLinkedQueue(){
+    cout << "Linked Queue" << endl;
+    LinkedQueue<int> queue;
+    queue.insert(11);
+    queue.insert(22);
+    queue.insert(33);
+    queue.remove();                          
+    cout << "Peek: " << queue.peek() << endl; 
+    queue.print();
+}
 
 int main(){
-    
+    int userInput, implementation;
+    cout << =========Data Structures Tester=========== << endl;
+    cout << "1. Test List" << endl << "2. Test Stack" << endl << "3. Test Queue" << endl << "0. Exit" << endl;
+    cin >> userInput;
+    switch(userInput){
+        case 1:
+            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+            cin >> implementation;
+            switch(implementation){
+                case 1:
+                    testArrayList();
+                    break;
+                case 2:
+                    testLinkedList();
+                    break;
+            }
+            break;
+        case 2:
+            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+            cin >> implementation;
+            switch(implementation){
+                case 1:
+                    testArrayStack();
+                    break;
+                case 2:
+                    testLinkedStack();
+                    break;
+            }
+            break;
+        case 3:
+            cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
+            cin >> implementation;
+            switch(implementation){
+                case 1:
+                    //
+                    break;
+                case 2:
+                    //
+                    break;
+            }
+            break;
+        case 0:
+            cout << "Goodbye!" << endl;
+            return 0;
+        default:
+            cout << "invalid option, please enter a different option" << endl;
+    }
+    return 0;
 }
