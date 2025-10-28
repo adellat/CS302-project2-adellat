@@ -77,22 +77,22 @@ int main(){
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
             if(implementation == 1){
-                
-                items.testArrayList();
+                ArrayList<int> list;
+                list.testArrayList();
             }else{
-               
-                items.testLinkedList();
+                LinkedList<int> list;
+                list.testLinkedList();
             }
             break;
         case 2:
             cout << "Choose Implementation:" << endl << "1. Array-Based" << endl << "2. Linked" << endl;
             cin >> implementation;
             if(implementation == 1){
-                
-                items.testArrayStack();
+                ArrayStack<int> stack;
+                stack.testArrayStack();
             }else{
-                
-                items.testLinkedStack();
+                LinkedStack<int> stack;
+                stack.testLinkedStack();
             }
             break;
         case 3:
