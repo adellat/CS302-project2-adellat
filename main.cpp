@@ -78,12 +78,12 @@ int main(){
             cin >> implementation;
             switch(implementation){
                 case 1:
-                    ArrayList<int> list;
-                    testArrayList();
+                    ArrayList<int> arrayList;
+                    arrayList.testArrayList();
                     break;
                 case 2:
-                    LinkedList<int> list;
-                    testLinkedList();
+                    LinkedList<int> linkedList;
+                    linkedList.testLinkedList();
                     break;
             }
             break;
@@ -92,12 +92,12 @@ int main(){
             cin >> implementation;
             switch(implementation){
                 case 1:
-                    ArrayStack<int> stack;
-                    testArrayStack();
+                    ArrayStack<int> arrayStack;
+                    arrayStack.testArrayStack();
                     break;
                 case 2:
-                    LinkedStack<int> stack;
-                    testLinkedStack();
+                    LinkedStack<int> linkedStack;
+                    linkedStack.testLinkedStack();
                     break;
             }
             break;
