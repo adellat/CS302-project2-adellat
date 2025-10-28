@@ -16,7 +16,7 @@ LinkedStack<T>::~LinkedStack() {
 template <typename T>
 bool LinkedStack<T>::push(const T& value) {
     Node<T>* newNode = new Node<T>(value);
-    newNode->getNext() = top;
+    newNode->setNext() = top;
     top = newNode;
     return true;
 }
