@@ -5,7 +5,7 @@ using namespace std;
 
 template <typename T>
 class Node{
-    T item;
+    T data;
     Node<T>* next; 
     public:
         // T data;
