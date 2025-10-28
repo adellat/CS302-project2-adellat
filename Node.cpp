@@ -3,17 +3,17 @@
 template <typename T>
 Node<T>::Node(){
     data = T();
-    nextPTR = nullptr;
+    next = nullptr;
 }
 template <typename T>
 Node<T>::Node(const T& value){
     data = value;
-    nextPTR = nullptr;
+    next = nullptr;
 }
 template <typename T>
 Node<T>::Node(const T& value, Node<T>* nextNode){
     data = value;
-    nextPTR = nextNode;
+    next = nextNode;
 }
 template <typename T>
 T Node<T>::getItem() const{
@@ -25,9 +25,9 @@ void Node<T>::setItem(const T& value){
 }
 template <typename T>
 Node<T>* Node<T>::getNext() const{
-    return nextPTR;
+    return next;
 }
 template <typename T>
 void Node<T>::setNext(Node<T>* nextNode){
-    nextPTR = nextNode;
+    next = nextNode;
 }
