@@ -2,7 +2,6 @@
 #define LINKEDLIST_H
 #include "Node.h"
 
-void testLinkedList();
 template<typename T>
 class LinkedList{
     Node<T>* headPTR;

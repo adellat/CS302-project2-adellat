@@ -3,7 +3,6 @@
 #include <iostream>
 using namespace std;
 
-void testArrayList();
 template <typename T>
 class ArrayList{
     int itemCounter;
