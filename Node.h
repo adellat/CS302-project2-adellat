@@ -5,9 +5,9 @@ using namespace std;
 
 template <typename T>
 class Node{
-    T data;
-    Node<T>* nextPTR;
     public:
+        T data;
+        Node<T>* nextPTR;
         Node();
         Node(const T& value);
         Node(const T& value, Node<T>* nextNode);

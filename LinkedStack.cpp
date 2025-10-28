@@ -46,9 +46,9 @@ bool LinkedStack<T>::isEmpty() const {
 template <typename T>
 void LinkedStack<T>::print() const {
     Node<T>* current = top;
-    while (currentPTR != nullptr) {
-        cout << currentPTR->data << " ";
-        currentPTR = currentPTR->nextPTR;
+    while (current != nullptr) {
+        cout << current->data << " ";
+        current = current->nextPTR;
     }
     cout << endl;
 }
