@@ -78,10 +78,10 @@ int main(){
             cin >> implementation;
             if(implementation == 1){
                 
-                arrayList.testArrayList();
+                items.testArrayList();
             }else{
                
-                linkedList.testLinkedList();
+                items.testLinkedList();
             }
             break;
         case 2:
@@ -89,10 +89,10 @@ int main(){
             cin >> implementation;
             if(implementation == 1){
                 
-                arrayStack.testArrayStack();
+                items.testArrayStack();
             }else{
                 
-                linkedStack.testLinkedStack();
+                items.testLinkedStack();
             }
             break;
         case 3:
