@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+void testArrayList();
 template <typename T>
 class ArrayList{
     int itemCounter;
@@ -19,6 +20,5 @@ class ArrayList{
         bool isEmpty() const;
         void print() const;
         ~ArrayList() {}
-        void testArrayList();
 };
 #endif

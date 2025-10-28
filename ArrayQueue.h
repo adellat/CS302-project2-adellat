@@ -2,6 +2,8 @@
 #define ArrayQueue_H
 #include <iostream>
 using namespace std;
+
+void testArrayQueue();
 template<typename T>
 class ArrayQueue{
     
@@ -11,6 +13,6 @@ class ArrayQueue{
         T peek() const;
         bool isEmpty() const;
         void print() const;
-        void testArrayQueue();
+        
 };
 #endif

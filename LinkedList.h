@@ -2,6 +2,7 @@
 #define LINKEDLIST_H
 #include "Node.h"
 
+void testLinkedList();
 template<typename T>
 class LinkedList{
     Node<T>* headPTR;
@@ -15,6 +16,6 @@ class LinkedList{
         int size() const;
         bool isEmpty() const;
         void print() const;
-        void testLinkedList();
+        
 };
 #endif

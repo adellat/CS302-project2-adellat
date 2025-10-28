@@ -3,6 +3,7 @@
 #include <iostream>
 using namespace std;
 
+void testArrayStack();
 template <typename T>
 class ArrayStack{
     static const int DEFAULT_MAX = 100;
@@ -15,6 +16,6 @@ class ArrayStack{
         T peek() const;
         bool isEmpty() const;
         void print() const;
-        void testArrayStack();
+
 };
 #endif 
