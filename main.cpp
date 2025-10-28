@@ -8,44 +8,44 @@
 #include "ArrayQueue.h"
 #include "LinkedQueue.h"
 
-void testArrayList(){
-    cout << endl << "Array List" << endl;
-    ArrayList<int> list;
-    list.insert(0, 15);
-    list.insert(1, 5);
-    list.insert(1, 10);
-    list.remove(0);
-    list.print();
-    cout << "Index 1: " << list.get(1) << endl;
-}
-void testLinkedList(){
-    cout << "Linked List" << endl;
-    LinkedList<int> list;
-    list.insert(0, 15);
-    list.insert(1, 5);
-    list.insert(1, 10);  
-    list.remove(2);     
-    list.print();       
-    cout << "Index 0: " << list.get(0) << endl;
-}
-void testArrayStack(){
-    cout << "Array Stack" << endl;
-    ArrayStack<int> stack;
-    stack.push(10);
-    stack.push(15);
-    cout << "Pop: " << stack.pop() << endl;   
-    cout << "Peek: " << stack.peek() << endl; 
-    stack.print(); 
-}
-void testLinkedStack(){
-    cout << "Linked Stack" << endl;
-    LinkedStack<int> stack;
-    stack.push(100);
-    stack.push(150);
-    cout << "Pop: " << stack.pop() << endl;   
-    cout << "Peek: " << stack.peek() << endl; 
-    stack.print();                            
-}
+// void testArrayList(){
+//     cout << endl << "Array List" << endl;
+//     ArrayList<int> list;
+//     list.insert(0, 15);
+//     list.insert(1, 5);
+//     list.insert(1, 10);
+//     list.remove(0);
+//     list.print();
+//     cout << "Index 1: " << list.get(1) << endl;
+// }
+// void testLinkedList(){
+//     cout << "Linked List" << endl;
+//     LinkedList<int> list;
+//     list.insert(0, 15);
+//     list.insert(1, 5);
+//     list.insert(1, 10);  
+//     list.remove(2);     
+//     list.print();       
+//     cout << "Index 0: " << list.get(0) << endl;
+// }
+// void testArrayStack(){
+//     cout << "Array Stack" << endl;
+//     ArrayStack<int> stack;
+//     stack.push(10);
+//     stack.push(15);
+//     cout << "Pop: " << stack.pop() << endl;   
+//     cout << "Peek: " << stack.peek() << endl; 
+//     stack.print(); 
+// }
+// void testLinkedStack(){
+//     cout << "Linked Stack" << endl;
+//     LinkedStack<int> stack;
+//     stack.push(100);
+//     stack.push(150);
+//     cout << "Pop: " << stack.pop() << endl;   
+//     cout << "Peek: " << stack.peek() << endl; 
+//     stack.print();                            
+// }
 //void testArrayQueue(){
 //    cout << "Array Queue" << endl;
  //   ArrayQueue<int> arrayQueue;
